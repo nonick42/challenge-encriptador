@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-celular.css">
+    <link rel="stylesheet" href="css/style-tablet.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="https://www.alura.com.br/" target="_blank">
+                <img src="assets/logo-alura.png" alt="Logo da Alura">
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section__imput">
+            <textarea class="section__imput__cxEntrada" placeholder="Digite seu texto aqui..."></textarea>
+
+            <div class="section__imput__botoesEaviso">
+                <div class="section__imput__botoesEaviso__aviso">
+                    <img src="assets/icone-ponto-de-exclamacao.png" alt="Ponto de exclamação">
+                    <p>Apenas letras minusculas e sem acento.</p>
+                </div>
+                <div class="section__imput__botoesEaviso__botoes">
+                    <button class="section__imput__botoesEaviso__btnCrip" onclick="btnCrip()">Criptografar</button>
+                    <button class="section__imput__botoesEaviso__btnDescrip" onclick="btnDescrip()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__output">
+            <div class="section__output__divImgTextareaAvisos">
+                <img class="section__output__imgCxMsgSaida" src="assets/boneco-com-lupa.png" alt="boneco com lupa">
+                <textarea class="section__output__cxSaida"></textarea>
+                <div class="section__output__avisos">
+                    <p class="section__output__avisos__aviso1">Nenhuma mensagem encontrada</p>
+                    <p class="section__output__avisos__aviso2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <button class="section__output__btnCopiar" onclick="funcaoCopiar()">Copiar</button>
+        </section>
+    </main>
+    
+    <footer></footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

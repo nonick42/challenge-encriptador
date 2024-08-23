@@ -1,0 +1,207 @@
+:root {
+    --cor-primaria: #e5e5e5 ;
+    --cor-secundaria: #fff ;
+    --cor-tercearia: #0A3871;
+    --cor-txt-cx-entrada: #0A3871; 
+    --cor-txt-cx-saida: #495057;
+    --cor-btnCrip-hover: #014496;
+    --cor-btnDescrip-hover: #ffffff;
+    --cor-btnCopiar-hover: #e5e5e5;
+
+    --font-family: "Inter", sans-serif;
+    --fontsize--cx-entrada: 2rem;
+    --fontsize--cx-saida: 1.5rem;
+    --fontsize--cx-saida-aviso1: 1.5rem;
+    --fontsize--cx-saida-aviso2: 1rem;
+    --fontsize--botoes: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    display: flex;
+}
+
+.header {
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18.75rem;
+}
+
+.section__imput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1.25rem;
+}
+
+.section__imput__cxEntrada {
+    border: none;
+    text-transform: lowercase;
+    font-size: var(--fontsize--cx-entrada);
+    color: var(--cor-txt-cx-entrada);
+    background-color: var(--cor-primaria);
+    width: 62.5rem;
+    height: 37.5rem;
+    padding: 1.563rem;
+    resize: none;
+}
+
+.section__imput__cxEntrada:focus {
+    outline: none;
+}
+
+.section__imput__botoesEaviso {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.section__imput__botoesEaviso__aviso {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.section__imput__botoesEaviso__botoes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.section__imput__botoesEaviso__btnCrip {
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+    width: 20.5rem;
+    padding: 0.625rem;
+    font-size: var(--fontsize--botoes);
+    background-color: var(--cor-tercearia);
+    color: var(--cor-secundaria);
+}
+
+.section__imput__botoesEaviso__btnCrip:hover {
+    background-color: var(--cor-btnCrip-hover);
+    transform: scale(1.04);
+    transition: transform 100ms ease-out;
+    cursor: pointer;
+}
+
+.section__imput__botoesEaviso__btnDescrip {
+    cursor: pointer;
+    border: 1px solid var(--cor-tercearia);
+    border-radius: 18px;
+    width: 20.5rem;
+    padding: 0.625rem;
+    font-size: var(--fontsize--botoes);
+    background-color: var(--cor-primaria);
+    color: var(--cor-tercearia);
+}
+
+.section__imput__botoesEaviso__btnDescrip:hover {
+    background-color: var(--cor-btnDescrip-hover);
+    transform: scale(1.04);
+    transition: transform 100ms ease-out;
+    cursor: pointer;
+}
+
+.section__output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 3rem;
+}
+
+.section__output__divImgTextareaAvisos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__output__imgCxMsgSaida {
+    display: block;
+    position: absolute;
+}
+
+.section__output__cxSaida {
+    border: none;
+    display: flex;
+    
+    background-color: var(--cor-secundaria);
+    border-radius: 32px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.34);
+    color: var(--cor-txt-cx-saida);
+    font-size: var(--fontsize--cx-saida);
+    padding: 1.563rem;
+    width: 25rem;
+    height: 53.125rem;
+    resize: none;
+}
+
+.section__output__cxSaida:focus {
+    outline: none;
+}
+
+.section__output__avisos {
+    position: absolute;
+    bottom: 10.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.section__output__avisos__aviso1{
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--fontsize--cx-saida-aviso1);
+    line-height: 28.8px;
+    background-color: var(--cor-secundaria);
+    position: relative;
+    width: 21rem;
+    height: 3.625rem;
+}
+
+.section__output__avisos__aviso2{
+    text-align: center;
+    font-size: var(--fontsize--cx-saida-aviso2);
+    font-weight: 400;
+    line-height: 24px;
+    background-color: var(--cor-secundaria);
+    width: 21rem;
+    height: 3rem;
+}
+
+.section__output__btnCopiar {
+    display: block;
+    cursor: pointer;
+    border: 1px solid var(--cor-tercearia);
+    border-radius: 18px;
+    width: 20.5rem;
+    padding: 0.625rem;
+    font-size: var(--fontsize--botoes);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-tercearia);
+    position: absolute;
+    bottom: 2.5rem;
+}
+
+.section__output__btnCopiar:hover {
+    background-color: var(--cor-btnCopiar-hover);
+    transform: scale(1.04);
+    transition: transform 100ms ease-out;
+    cursor: pointer;
+}

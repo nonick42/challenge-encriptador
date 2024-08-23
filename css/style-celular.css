@@ -1,0 +1,80 @@
+:root {
+    --fontsizeCelular-cx-entrada: 2rem;
+    --fontsizeCelular-cx-saida: 1.5rem;
+
+    --fontsizeCelular-cx-entrada--aviso: 0.75rem;
+}
+
+@media (max-width: 430px) {
+
+    body {
+        display: block;
+    }
+
+    .header {
+        padding-top: 1.25rem;
+        padding-left: 0rem;
+    }
+
+    .main {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .section__imput {
+        margin-top: 2.5rem;
+    }
+    
+    .section__imput__cxEntrada {
+        width: 80%;
+        height: 18.75rem;
+        font-size: var(--fontsizeCelular-cx-entrada);
+    }
+
+    .section__imput__botoesEaviso {
+        gap: 1.25rem;
+    }
+
+    .section__imput__botoesEaviso__aviso {
+        font-size: var(--fontsizeCelular-cx-entrada--aviso);
+    }
+
+    .section__imput__botoesEaviso__botoes {
+        flex-direction: column;
+        gap: 0.938rem;
+    }
+
+    .section__output {
+        margin-right: 0rem;
+    }
+
+    .section__output__cxSaida {
+        width: 90%;
+        height: 28.125rem;
+        margin-bottom: 1.875rem;
+        font-size: var(--fontsizeCelular-cx-saida);
+    }
+
+    .section__output__imgCxMsgSaida {
+        visibility: hidden;
+    }
+
+    .section__output__avisos {
+        bottom: 17.188rem;
+    }
+
+    .section__output__avisos__aviso1{
+        width: 18.75rem;
+    }
+
+    .section__output__avisos__aviso2{
+        width: 18.75rem;
+    }
+
+    .section__output__btnCopiar {
+        width: 75%;
+        bottom: 0rem;
+        margin-bottom: 3.125rem;
+    }
+}

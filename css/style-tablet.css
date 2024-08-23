@@ -1,0 +1,88 @@
+:root {
+    --fontsizeTablet-cx-entrada: 2rem;
+    --fontsizeTablet-cx-saida: 1.5rem;
+
+    --fontsizeTablet-cx-entrada--aviso: 0.938rem;
+    --fontsizeTablet-cx-saida--aviso1: 2.5rem;
+    --fontsizeTablet-cx-saida--aviso2: 1.25rem;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    body {
+        display: block;
+    }
+
+    .header {
+        padding-top: 2.5rem;
+        padding-left: 0.625rem;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 6.25rem;
+    }
+
+    .section__imput {
+        margin-top: 2.5rem;
+        width: 90%;
+    }
+    
+    .section__imput__cxEntrada {
+        width: 80%;
+        height: 21.875rem;
+        font-size: var(--fontsizeTablet-cx-entrada);
+    }
+
+    .section__imput__botoesEaviso {
+        gap: 1.25rem;
+    }
+
+    .section__imput__botoesEaviso__aviso {
+        font-size: var(--fontsizeTablet-cx-entrada--aviso);
+        margin-top: 1.875rem;
+    }
+
+    .section__imput__botoesEaviso__botoes {
+        gap: 2.813rem;
+    }
+
+    .section__output {
+        width: 90%;
+        margin-right: 0rem;
+    }
+
+    .section__output__cxSaida {
+        width: 250%;
+        height: 28.125rem;
+        margin-bottom: 1.875rem;
+        font-size: var(--fontsizeTablet-cx-saida);
+    }
+
+    .section__output__imgCxMsgSaida {
+        visibility: hidden;
+    }
+
+    .section__output__avisos {
+        bottom: 15.625rem;
+    }
+
+    .section__output__avisos__aviso1 {
+        width: 100%;
+        font-size: var(--fontsizeTablet-cx-saida--aviso1);
+        margin-bottom: 1.25rem;
+    }
+
+    .section__output__avisos__aviso2 {
+        width: 100%;
+        font-size: var(--fontsizeTablet-cx-saida--aviso2);
+        margin-bottom: -1.25rem;
+    }
+
+
+    .section__output__btnCopiar {
+        width: 40%;
+        bottom: 0rem;
+        margin-bottom: 4.375rem;
+    }
+}
