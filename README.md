@@ -28,12 +28,17 @@ O encriptador tem as funções de encriptar, desencriptar e copiar o texto inser
 
 ---
 
+**🔗 LINK DO PROJETO:**
+
+Para verificar como ficou o projeto, deixo aqui o [link do mesmo](https://challenge-encriptador-vs-final.vercel.app/).
+
+---
+
 **🙏 AGRADECIMENTOS:**
 
 - *Alura*
 - *Oracle*
 - *Programa ONE*
 
----
 
-**Com ❤️ por *Raul Rodrigues*.**
+**Com ❤️, por *Raul Rodrigues*.**
