@@ -4,6 +4,12 @@ O encriptador tem as funções de encriptar, desencriptar e copiar o texto inser
 
 ---
 
+**🔗 LINK DO PROJETO:**
+
+Para verificar como ficou o projeto, deixo aqui o [link do mesmo](https://challenge-encriptador-vs-final.vercel.app/).
+
+---
+
 **📋 SOBRE AS FUNÇÕES:**
 
 - ***ENCRIPTAR*** o texto inserido na *caixa de entrada* após o usuário clicar no botão *criptografar*, fazendo com que a *imagem e os avisos* desapareçam da caixa de saída e deem lugar ao texto já *criptografado*.
@@ -25,12 +31,6 @@ O encriptador tem as funções de encriptar, desencriptar e copiar o texto inser
 **✒️ AUTOR:**
 
 - *Raul Rodrigues*
-
----
-
-**🔗 LINK DO PROJETO:**
-
-Para verificar como ficou o projeto, deixo aqui o [link do mesmo](https://challenge-encriptador-vs-final.vercel.app/).
 
 ---
 
